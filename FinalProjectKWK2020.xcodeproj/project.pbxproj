@@ -16,6 +16,8 @@
 		2E10257124BE368900CC3CF4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E10256F24BE368900CC3CF4 /* LaunchScreen.storyboard */; };
 		2E10257C24BE368900CC3CF4 /* FinalProjectKWK2020Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E10257B24BE368900CC3CF4 /* FinalProjectKWK2020Tests.swift */; };
 		2E10258724BE368900CC3CF4 /* FinalProjectKWK2020UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E10258624BE368900CC3CF4 /* FinalProjectKWK2020UITests.swift */; };
+		2EBAB8A724C0D64100583041 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBAB8A624C0D64100583041 /* MapViewController.swift */; };
+		2EBAB8A924C0DB1000583041 /* DirectoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBAB8A824C0DB1000583041 /* DirectoryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		2E10258224BE368900CC3CF4 /* FinalProjectKWK2020UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FinalProjectKWK2020UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E10258624BE368900CC3CF4 /* FinalProjectKWK2020UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalProjectKWK2020UITests.swift; sourceTree = "<group>"; };
 		2E10258824BE368900CC3CF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2EBAB8A624C0D64100583041 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		2EBAB8A824C0DB1000583041 /* DirectoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectoryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +109,8 @@
 				2E10256324BE368800CC3CF4 /* SceneDelegate.swift */,
 				2E10256524BE368800CC3CF4 /* ViewController.swift */,
 				2E10256724BE368800CC3CF4 /* Main.storyboard */,
+				2EBAB8A824C0DB1000583041 /* DirectoryViewController.swift */,
+				2EBAB8A624C0D64100583041 /* MapViewController.swift */,
 				2E10256D24BE368900CC3CF4 /* Assets.xcassets */,
 				2E10256F24BE368900CC3CF4 /* LaunchScreen.storyboard */,
 				2E10257224BE368900CC3CF4 /* Info.plist */,
@@ -264,7 +270,9 @@
 			files = (
 				2E10256C24BE368800CC3CF4 /* FinalProjectKWK2020.xcdatamodeld in Sources */,
 				2E10256624BE368800CC3CF4 /* ViewController.swift in Sources */,
+				2EBAB8A924C0DB1000583041 /* DirectoryViewController.swift in Sources */,
 				2E10256224BE368800CC3CF4 /* AppDelegate.swift in Sources */,
+				2EBAB8A724C0D64100583041 /* MapViewController.swift in Sources */,
 				2E10256424BE368800CC3CF4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
