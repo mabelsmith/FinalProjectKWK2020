@@ -131,11 +131,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Nof-x4-7S4">
-                                <rect key="frame" x="0.0" y="0.0" width="427" height="896"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
-                            </mapView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yHo-aw-nuy">
                                 <rect key="frame" x="20" y="20" width="57" height="63"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -146,8 +141,21 @@
                                     <segue destination="lgm-px-bJv" kind="show" id="YfP-CJ-2Xy"/>
                                 </connections>
                             </button>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Nof-x4-7S4">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                                <connections>
+                                    <outlet property="delegate" destination="FEc-0w-d7C" id="TGP-0i-yKW"/>
+                                </connections>
+                            </mapView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Nof-x4-7S4" firstAttribute="top" secondItem="FEc-0w-d7C" secondAttribute="top" id="0fO-YA-Un1"/>
+                            <constraint firstAttribute="trailing" secondItem="Nof-x4-7S4" secondAttribute="trailing" id="hzt-5b-aBM"/>
+                            <constraint firstAttribute="bottom" secondItem="Nof-x4-7S4" secondAttribute="bottom" id="mAX-0q-XC0"/>
+                            <constraint firstItem="Nof-x4-7S4" firstAttribute="leading" secondItem="FEc-0w-d7C" secondAttribute="leading" id="mKt-Zc-Lvo"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="OZ5-9G-Zcn"/>
                     </view>
                     <navigationItem key="navigationItem" id="fag-gQ-vl3"/>
@@ -158,7 +166,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="650-V8-grN"/>
+        <segue reference="YfP-CJ-2Xy"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="arrow.left.circle" catalog="system" width="128" height="121"/>
